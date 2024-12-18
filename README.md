@@ -1,16 +1,11 @@
 # state_bloc
 
-A new Flutter project.
+Utilizando o pacote flutter_bloc para gerenciar o estado. 
+A aplicação apresenta um texto que alterna ao pressionar um botão.
 
-## Getting Started
+Como Funciona
+TextCubit: Classe que estende Cubit<TextState> e gerencia o estado do texto e sua cor.
 
-This project is a starting point for a Flutter application.
+BlocProvider: Utiliza-se BlocProvider para fornecer a instância de TextCubit para a aplicação.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+BlocBuilder: Escuta as mudanças no estado e atualiza a UI de acordo.
